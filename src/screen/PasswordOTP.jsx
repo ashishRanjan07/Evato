@@ -1,5 +1,6 @@
 import {
   Image,
+  SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
@@ -14,6 +15,7 @@ import Footer from '../../components/Footer';
 const PasswordOTP = ({navigation}) => {
   return (
     <ScrollView>
+    <SafeAreaView/>
       <Header />
       <View style={styles.View}>
         <Image

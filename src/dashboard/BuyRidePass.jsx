@@ -4,6 +4,7 @@ import {
   View,
   TouchableOpacity,
   ScrollView,
+  SafeAreaView,
 } from 'react-native';
 import React from 'react';
 import Pass from '../../components/Pass';
@@ -13,6 +14,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 const BuyRidePass = ({navigation}) => {
   return (
     <ScrollView style={{flex: 1}}>
+    <SafeAreaView/>
       <HeaderInside navigation={navigation} />
 
       <View style={styles.View}>

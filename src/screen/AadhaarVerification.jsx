@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   View,
   Alert,
+  SafeAreaView,
 } from 'react-native';
 import React, {useRef, useState} from 'react';
 import Header from '../../components/Header';
@@ -60,6 +61,7 @@ const AadhaarVerification = ({navigation}) => {
   };
   return (
     <ScrollView>
+    <SafeAreaView/>
       <Header />
       <View style={styles.View}>
         <Image

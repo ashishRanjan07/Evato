@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
+  SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
 import Header from '../../components/Header';
@@ -20,6 +21,7 @@ const SignUp = ({navigation}) => {
 
   return (
     <ScrollView style={{flex: 1}}>
+    <SafeAreaView/>
       <Header />
       <View style={styles.View}>
         <Image

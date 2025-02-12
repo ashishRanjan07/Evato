@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
+  SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
 import Header from '../../components/Header';
@@ -21,6 +22,7 @@ const SignIn = ({navigation}) => {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <ScrollView style={{flex: 1, backgroundColor: 'white'}}>
+    <SafeAreaView/>
       <Header />
       <View style={styles.View}>
         <Image

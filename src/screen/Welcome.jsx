@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity, Image, SafeAreaView} from 'react-native';
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -8,6 +8,7 @@ import FooterSticky from '../../components/FooterSticky';
 const Welcome = ({navigation}) => {
   return (
     <View style={{flex: 1, backgroundColor: 'white'}}>
+    <SafeAreaView/>
       <Header />
       <View
         style={{marginTop: -100, flexDirection: 'column', alignSelf: 'center'}}>

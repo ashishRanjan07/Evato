@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, FlatList, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, FlatList, TouchableOpacity, SafeAreaView} from 'react-native';
 import React, {useState} from 'react';
 import {transaction} from '../../assests/data/Transaction';
 import HeaderInside from '../../components/HeaderInside';
@@ -39,6 +39,7 @@ const Transaction = ({navigation}) => {
 
   return (
     <View>
+    <SafeAreaView/>
       <HeaderInside navigation={navigation} />
       <Text style={styles.title}>Transaction History</Text>
       <View style={styles.table}>

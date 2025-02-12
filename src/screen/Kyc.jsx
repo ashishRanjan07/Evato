@@ -6,6 +6,7 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
 import Header from '../../components/Header';
@@ -18,6 +19,7 @@ const KYC = ({navigation}) => {
 
   return (
     <ScrollView>
+    <SafeAreaView/>
       <Header />
       <View style={styles.View}>
         <Image

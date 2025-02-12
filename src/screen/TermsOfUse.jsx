@@ -1,5 +1,6 @@
 import {
   Image,
+  SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
@@ -14,6 +15,7 @@ const TermsOfUse = ({navigation}) => {
   const [selected, setSelected] = useState(false);
   return (
     <ScrollView>
+    <SafeAreaView/>
       <Header />
       <View style={styles.View}>
         <Image

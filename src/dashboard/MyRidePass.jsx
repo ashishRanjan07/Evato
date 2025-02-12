@@ -1,4 +1,4 @@
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Footer from '../../components/Footer';
 import HeaderInside from '../../components/HeaderInside';
@@ -6,6 +6,7 @@ import HeaderInside from '../../components/HeaderInside';
 const MyRidePass = ({navigation}) => {
   return (
     <ScrollView style={{flex: 1}}>
+    <SafeAreaView/>
       <HeaderInside navigation={navigation} />
       <Text style={styles.title}>My Ride Pass</Text>
       <View style={styles.view2}>

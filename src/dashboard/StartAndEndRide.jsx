@@ -1,4 +1,4 @@
-import {Alert, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Alert, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React, {useRef, useState} from 'react';
 import {ScrollView, TextInput} from 'react-native-gesture-handler';
 import HeaderInside from '../../components/HeaderInside';
@@ -67,6 +67,7 @@ const StartAndEndRide = ({navigation}) => {
   };
   return (
     <ScrollView style={{flex: 1}}>
+    <SafeAreaView/>
       <HeaderInside navigation={navigation} />
       <View style={styles.View}>
         <View>

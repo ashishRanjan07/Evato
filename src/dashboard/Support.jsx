@@ -1,4 +1,4 @@
-import {StyleSheet, Image, Text, View, ScrollView} from 'react-native';
+import {StyleSheet, Image, Text, View, ScrollView, SafeAreaView} from 'react-native';
 import React from 'react';
 import FooterSticky from '../../components/FooterSticky';
 import HeaderInside from '../../components/HeaderInside';
@@ -7,6 +7,7 @@ const Support = ({navigation}) => {
   return (
     <>
       <ScrollView style={{flex: 1}}>
+      <SafeAreaView/>
         <HeaderInside navigation={navigation} />
         <View style={styles.View}>
           <Image

@@ -1,4 +1,5 @@
 import {
+  SafeAreaView,
   StyleSheet,
   Text,
   TextInput,
@@ -20,6 +21,8 @@ const Dashboard = ({navigation}) => {
 
   return (
     <View style={{flex: 1}}>
+    <SafeAreaView/>
+    <SafeAreaView/>
       <HeaderInside navigation={navigation} />
       <View style={styles.inputView}>
         <FontAwesome name="search" size={24} color="gray" />

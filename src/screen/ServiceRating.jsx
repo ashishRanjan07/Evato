@@ -1,5 +1,6 @@
 import {
   Image,
+  SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
@@ -17,6 +18,7 @@ const ServiceRating = ({navigation}) => {
 
   return (
     <ScrollView style={{flex: 1}}>
+    <SafeAreaView/>
       <HeaderInside navigation={navigation} />
       <Text style={styles.title}>Service Rating</Text>
 

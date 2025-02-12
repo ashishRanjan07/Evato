@@ -6,6 +6,7 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -27,6 +28,7 @@ const UserProfile = ({navigation}) => {
 
   return (
     <ScrollView style={{flex: 1}}>
+    <SafeAreaView/>
       <HeaderInside navigation={navigation} />
       <View style={styles.View}>
         <Image

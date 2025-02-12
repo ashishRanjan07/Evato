@@ -5,6 +5,7 @@ import {
   FlatList,
   TouchableOpacity,
   ScrollView,
+  SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
 import {MyBookingData} from '../../assests/data/MyBookingData';
@@ -67,6 +68,7 @@ const MyBooking = ({navigation}) => {
 
   return (
     <View style={{flex: 1}}>
+    <SafeAreaView/>
       <HeaderInside navigation={navigation} />
       <Text style={styles.title}>Booking History</Text>
       <View style={styles.tableContainer}>

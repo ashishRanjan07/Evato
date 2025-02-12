@@ -8,6 +8,7 @@ import {
   Linking,
   Share,
   Alert,
+  SafeAreaView,
 } from 'react-native';
 import React from 'react';
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -87,6 +88,7 @@ const Refer = ({navigation}) => {
 
   return (
     <ScrollView style={{flex: 1}}>
+    <SafeAreaView/>
       <HeaderInside navigation={navigation} />
 
       <View style={styles.View}>

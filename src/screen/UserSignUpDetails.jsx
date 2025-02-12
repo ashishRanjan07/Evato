@@ -6,6 +6,7 @@ import {
   Text,
   View,
   TouchableOpacity,
+  SafeAreaView,
 } from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 import React, {useState} from 'react';
@@ -70,6 +71,7 @@ const UserSignUpDetails = ({navigation}) => {
 
   return (
     <ScrollView style={{flex: 1}}>
+    <SafeAreaView/>
       <Header />
       <View style={styles.View}>
         <Image

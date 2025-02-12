@@ -5,6 +5,7 @@ import {
   ScrollView,
   Image,
   TouchableOpacity,
+  SafeAreaView,
 } from 'react-native';
 import React from 'react';
 import FooterSticky from '../../components/FooterSticky';
@@ -13,6 +14,7 @@ import HeaderInside from '../../components/HeaderInside';
 const PrivacyPolicy = ({navigation}) => {
   return (
     <ScrollView style={{flex: 1}}>
+    <SafeAreaView/>
       <HeaderInside navigation={navigation} />
       <View style={styles.View}>
         <Image

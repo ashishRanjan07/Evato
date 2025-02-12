@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity, SafeAreaView} from 'react-native';
 import React, {useState} from 'react';
 import Header from '../../components/Header';
 import {RadioButton} from 'react-native-paper';
@@ -10,6 +10,7 @@ const VehicleConditionCheck = ({navigation}) => {
   const [bodyDent, setBodyDent] = useState(null);
   return (
     <View style={{flex: 1}}>
+    <SafeAreaView/>
       <Header />
       {/* <HeaderInside navigation={navigation} /> */}
       <Text style={styles.title}>Vehicle Condition Check</Text>

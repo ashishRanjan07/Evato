@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
+  SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
 import Header from '../../components/Header';
@@ -16,6 +17,7 @@ const FPassword = ({navigation}) => {
   // console.log(mobileNumber);
   return (
     <ScrollView>
+    <SafeAreaView/>
       <Header />
       <View style={styles.View}>
         <Image

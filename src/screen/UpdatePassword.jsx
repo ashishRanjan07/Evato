@@ -1,5 +1,6 @@
 import {
   Image,
+  SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
@@ -18,6 +19,7 @@ const UpdatePassword = ({navigation}) => {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <ScrollView>
+    <SafeAreaView/>
       <Header />
       <View style={styles.View}>
         <Image
